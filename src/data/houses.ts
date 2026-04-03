@@ -25,7 +25,7 @@ export const houses: House[] = [
     price: 450,
     distance: 2,
     type: 'Private',
-    imagen: '',
+    imagen: 'https://i.pinimg.com/736x/1e/f5/c1/1ef5c19a4d2913b56d9a129759b82d5e.jpg',
     description: 'Close and comfortable',
   },
 ];
