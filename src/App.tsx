@@ -1,7 +1,10 @@
-import './App.css';
+import Housinglist from './components/HousingList';
 
 function App() {
-  return <>Hola</>;
+  return (
+    <div>
+      <Housinglist />
+    </div>
+  );
 }
-
 export default App;
