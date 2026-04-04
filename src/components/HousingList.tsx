@@ -10,12 +10,21 @@ const Housinglist = () => {
   const [lifeStyle, setLifeStyle] = useState('');
   const [showFilters, setShowFilters] = useState(false);
   const [extraFilters, setExtraFilters] = useState<string[]>([]);
+  const [favorites, setFavorites] = useState<number[]>([]);
 
   const handleExtraFilter = (filter: string) => {
     if (extraFilters.includes(filter)) {
       setExtraFilters(extraFilters.filter((f) => f !== filter));
     } else {
       setExtraFilters([...extraFilters, filter]);
+    }
+  };
+
+  const toggleFavorite = (id: number) => {
+    if (favorites.includes(id)) {
+      setFavorites(favorites.filter((fav) => fav !== id));
+    } else {
+      setFavorites([...favorites, id]);
     }
   };
 
@@ -125,7 +134,12 @@ const Housinglist = () => {
       )}
 
       {filteredHouses.map((house) => (
-        <HousingCard key={house.id} house={house} />
+        <HousingCard
+          key={house.id}
+          house={house}
+          isFavorite={favorites.includes(house.id)}
+          onToggleFavorite={toggleFavorite}
+        />
       ))}
     </div>
   );
