@@ -4,6 +4,7 @@ export interface House {
   price: number;
   distance: number;
   type: string;
+  lifeStyle: string;
   imagen: string;
   description: string;
 }
