@@ -25,7 +25,16 @@ const Housinglist = () => {
       house.price <= maxPrice &&
       house.distance <= maxDistance &&
       (propertyType === '' || house.type === propertyType) &&
-      (lifeStyle === '' || house.lifeStyle === lifeStyle)
+      (lifeStyle === '' || house.lifeStyle === lifeStyle) &&
+      (extraFilters.length === 0 ||
+        extraFilters.every((filter) => {
+          if (filter === 'shared') return house.shared;
+          if (filter === 'private') return house.private;
+          if (filter === 'furnished') return house.furnished;
+          if (filter === 'unfurnished') return house.unfurnished;
+          if (filter === 'petFriendly') return house.petFriendly;
+          return true;
+        }))
   );
 
   return (
