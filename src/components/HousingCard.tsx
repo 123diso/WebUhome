@@ -14,15 +14,17 @@ const HousingCard = ({ house, isFavorite, onToggleFavorite }: Props) => {
 
       <div className="card-content">
         <h3>{house.title}</h3>
-        <p>Price: ${house.price}</p>
-        <p>Distance: {house.distance} km</p>
-        <p>Type: {house.type}</p>
-        <p>Description: {house.description}</p>
+
+        <p className="subtitle">{house.distance} min from campus</p>
+        <p className="type">{house.type}</p>
+        <p className="description"> {house.description}</p>
       </div>
 
       <button className="favorite-btn" onClick={() => onToggleFavorite(house.id)}>
         {isFavorite ? '❤️' : '🤍'}
       </button>
+
+      <span className="price">From ${house.price}/month</span>
 
       <hr />
     </div>
