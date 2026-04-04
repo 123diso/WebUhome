@@ -1,0 +1,99 @@
+.problem-section {
+  background: #ffffff;
+  padding: 64px 24px;
+}
+
+.problem-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.problem-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #111827;
+  margin-bottom: 32px;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.problem-card {
+  color: white;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.problem-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+}
+
+.problem-card-blue {
+  background: #7f96e6; /* más parecido a tu diseño */
+}
+
+.problem-card-teal {
+  background: #2f7d67;
+}
+
+.problem-card-orange {
+  background: #f2653a;
+}
+
+.problem-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.problem-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.problem-card h4 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.problem-text {
+  text-align: center;
+  color: #374151;
+  font-size: 1.1rem;
+  margin-top: 36px;
+  font-weight: 500;
+}
+
+.problem-text span {
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-card {
+    text-align: center;
+  }
+
+  .problem-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
