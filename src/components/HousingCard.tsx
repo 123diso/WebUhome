@@ -1,4 +1,5 @@
 import type { House } from '../types/House';
+import './HousingCard.css';
 
 interface Props {
   house: House;
@@ -8,15 +9,18 @@ interface Props {
 
 const HousingCard = ({ house, isFavorite, onToggleFavorite }: Props) => {
   return (
-    <div>
+    <div className="card">
       <img src={house.imagen} alt={house.title} />
-      <h3>{house.title}</h3>
-      <p>Price: ${house.price}</p>
-      <p>Distance: {house.distance} km</p>
-      <p>Type: {house.type}</p>
-      <p>Description: {house.description}</p>
 
-      <button onClick={() => onToggleFavorite(house.id)}>
+      <div className="card-content">
+        <h3>{house.title}</h3>
+        <p>Price: ${house.price}</p>
+        <p>Distance: {house.distance} km</p>
+        <p>Type: {house.type}</p>
+        <p>Description: {house.description}</p>
+      </div>
+
+      <button className="favorite-btn" onClick={() => onToggleFavorite(house.id)}>
         {isFavorite ? '❤️' : '🤍'}
       </button>
 

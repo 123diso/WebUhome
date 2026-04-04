@@ -1,6 +1,7 @@
 import { houses } from '../data/houses';
 import HousingCard from './HousingCard';
 import { useState } from 'react';
+import './HousingList.css';
 
 const Housinglist = () => {
   const [search, setsearch] = useState('');
@@ -47,7 +48,7 @@ const Housinglist = () => {
   );
 
   return (
-    <div>
+    <div className="container">
       <h2>Housing List</h2>
 
       {/*search*/}
