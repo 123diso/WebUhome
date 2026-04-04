@@ -8,6 +8,16 @@ const Housinglist = () => {
   const [maxDistance, setMaxDistance] = useState(50);
   const [propertyType, setPropertyType] = useState('');
   const [lifeStyle, setLifeStyle] = useState('');
+  const [showFilters, setShowFilters] = useState(false);
+  const [extraFilters, setExtraFilters] = useState<string[]>([]);
+
+  const handleExtraFilter = (filter: string) => {
+    if (extraFilters.includes(filter)) {
+      setExtraFilters(extraFilters.filter((f) => f !== filter));
+    } else {
+      setExtraFilters([...extraFilters, filter]);
+    }
+  };
 
   const filteredHouses = houses.filter(
     (house) =>
@@ -59,8 +69,6 @@ const Housinglist = () => {
         <label>Property Type</label>
         <select value={propertyType} onChange={(e) => setPropertyType(e.target.value)}>
           <option value="">All</option>
-          <option value="Private">Private</option>
-          <option value="Shared">Shared</option>
           <option value="House">House</option>
           <option value="Room">Room</option>
           <option value="Apartment">Apartment</option>
@@ -77,6 +85,35 @@ const Housinglist = () => {
           <option value="nightlife">Nightlife</option>
         </select>
       </div>
+
+      {/*extra filters*/}
+      <button onClick={() => setShowFilters(!showFilters)}>
+        {showFilters ? 'Hide Filters' : 'Show Filters'}
+      </button>
+      {showFilters && (
+        <div>
+          <label>
+            <input type="checkbox" onChange={() => handleExtraFilter('shared')} />
+            Shared
+          </label>
+          <label>
+            <input type="checkbox" onChange={() => handleExtraFilter('private')} />
+            Private
+          </label>
+          <label>
+            <input type="checkbox" onChange={() => handleExtraFilter('furnished')} />
+            Furnished
+          </label>
+          <label>
+            <input type="checkbox" onChange={() => handleExtraFilter('unfurnished')} />
+            Unfurnished
+          </label>
+          <label>
+            <input type="checkbox" onChange={() => handleExtraFilter('petFriendly')} />
+            Pet Friendly
+          </label>
+        </div>
+      )}
 
       {filteredHouses.map((house) => (
         <HousingCard key={house.id} house={house} />
