@@ -7,4 +7,9 @@ export interface House {
   lifeStyle: string;
   imagen: string;
   description: string;
+  private: boolean;
+  shared: boolean;
+  furnished: boolean;
+  unfurnished: boolean;
+  petFriendly: boolean;
 }
