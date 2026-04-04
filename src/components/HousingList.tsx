@@ -6,12 +6,14 @@ const Housinglist = () => {
   const [search, setsearch] = useState('');
   const [maxPrice, setMaxPrice] = useState(1000);
   const [maxDistance, setMaxDistance] = useState(50);
+  const [propertyType, setPropertyType] = useState('');
 
   const filteredHouses = houses.filter(
     (house) =>
       house.title.toLowerCase().includes(search.toLowerCase()) &&
       house.price <= maxPrice &&
-      house.distance <= maxDistance
+      house.distance <= maxDistance &&
+      (propertyType === '' || house.type === propertyType)
   );
 
   return (
@@ -48,6 +50,19 @@ const Housinglist = () => {
           value={maxDistance}
           onChange={(e) => setMaxDistance(Number(e.target.value))}
         />
+      </div>
+
+      {/*property type */}
+      <div>
+        <label>Property Type</label>
+        <select value={propertyType} onChange={(e) => setPropertyType(e.target.value)}>
+          <option value="">All</option>
+          <option value="Private">Private</option>
+          <option value="Shared">Shared</option>
+          <option value="House">House</option>
+          <option value="Room">Room</option>
+          <option value="Apartment">Apartment</option>
+        </select>
       </div>
 
       {filteredHouses.map((house) => (
