@@ -5,7 +5,7 @@ export interface House {
   distance: number;
   type: string;
   lifeStyle: string;
-  imagen: string;
+  images: string[];
   description: string;
   private: boolean;
   shared: boolean;
