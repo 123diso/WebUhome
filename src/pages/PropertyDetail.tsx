@@ -1,0 +1,7 @@
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import '../styles/property-detail.css'
+import { FaBed, FaBath, FaUsers } from 'react-icons/fa'
+import { PiPawPrintFill } from 'react-icons/pi'
+import { IoLocationSharp } from 'react-icons/io5'
+import property from '../data/properties'
