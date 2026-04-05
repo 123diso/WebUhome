@@ -46,3 +46,67 @@
   border-bottom: 2px solid #8d8484;
 }
 
+.profile-card {
+  background: #fff8f6;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.profile-top {
+  display: grid;
+  grid-template-columns: 1.1fr 1.3fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.avatar-box {
+  background: #aab7ed;
+  border-radius: 12px;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-icon {
+  font-size: 6rem;
+  color: #456ed0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name-pill {
+  display: inline-block;
+  background: #d5c4ef;
+  color: #5b34c8;
+  border-radius: 999px;
+  padding: 6px 14px;
+  width: fit-content;
+  font-size: 1.85rem;
+  font-weight: 700;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.second-line {
+  margin-top: 2px;
+}
+
+.tag,
+.mini-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  line-height: 1;
+}
