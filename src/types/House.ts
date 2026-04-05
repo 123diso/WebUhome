@@ -12,4 +12,9 @@ export interface House {
   furnished: boolean;
   unfurnished: boolean;
   petFriendly: boolean;
+  rating: number;
+  reviews: number;
+  beds?: number;
+  baths?: number;
+  transport?: number;
 }

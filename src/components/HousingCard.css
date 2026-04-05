@@ -70,9 +70,34 @@
   flex-direction: column;
 }
 
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .card-content h3 {
   margin: 0;
   font-size: 20px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0f0f0;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.rating-number {
+  font-weight: bold;
+  color: #2c7a4b;
+}
+
+.stars {
+  color: #f4b400;
 }
 
 .distance {
@@ -91,7 +116,6 @@
   color: #555;
   margin-top: 8px;
 }
-
 .more-info {
   margin-top: auto;
   align-self: flex-end;

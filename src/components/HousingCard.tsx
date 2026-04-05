@@ -21,6 +21,18 @@ const HousingCard = ({ house, isFavorite, onToggleFavorite }: Props) => {
     setCurrentImage((prev) => (prev === 0 ? house.images.length - 1 : prev - 1));
   };
 
+  const renderStars = (rating: number) => {
+    const fullStars = Math.floor(rating);
+    const emptyStars = 5 - fullStars;
+
+    return (
+      <>
+        {'⭐'.repeat(fullStars)}
+        {'☆'.repeat(emptyStars)}
+      </>
+    );
+  };
+
   return (
     <div className="card">
       <div className="card-image">
@@ -45,7 +57,14 @@ const HousingCard = ({ house, isFavorite, onToggleFavorite }: Props) => {
       </div>
 
       <div className="card-content">
-        <h3>{house.title}</h3>
+        <div className="card-header">
+          <h3>{house.title}</h3>
+
+          <div className="rating">
+            <span className="rating-number">{house.rating}</span>
+            <span className="stars">{renderStars(house.rating)}</span>
+          </div>
+        </div>
 
         <p className="distance">{house.distance} min from campus</p>
 
