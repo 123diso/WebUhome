@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/hero-section.css';
-import distanceIcon from '../assets/distance.png'; // ✅ CORRECTO
+import distanceIcon from '../assets/distance.png';
 
 export default function HeroSection() {
   const navigate = useNavigate();
@@ -10,8 +10,7 @@ export default function HeroSection() {
   };
 
   const handleStartSearching = () => {
-    // Cambia esta ruta cuando tengas la página lista
-    navigate('/search');
+    navigate('/start'); // 👈 ahora va a tu página Start
   };
 
   return (
