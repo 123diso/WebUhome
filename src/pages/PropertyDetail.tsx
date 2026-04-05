@@ -182,7 +182,39 @@ function PropertyDetail() {
                 <span>4.1</span>
               </div>
 
+              <div className="review-pill blue-pill">
+                <img
+                  src="https://randomuser.me/api/portraits/men/16.jpg"
+                  alt="reviewer"
+                />
+                <p>“Simple house rules and peaceful vibe.”</p>
+                <span>4.1</span>
+              </div>
 
+              <div className="review-pill red-pill">
+                <img
+                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  alt="reviewer"
+                />
+                <p>“State organized and easy to live in.”</p>
+                <span>4.0</span>
+              </div>
+
+              <div className="review-pill green-pill">
+                <img
+                  src="https://randomuser.me/api/portraits/men/71.jpg"
+                  alt="reviewer"
+                />
+                <p>“Cozy room and friendly environment.”</p>
+                <span>3.9</span>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <Footer />
+      </div>
+    </div>
   )
 }
 
