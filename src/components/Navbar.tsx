@@ -1,4 +1,6 @@
 import '../styles/navbar.css'
+import { Link } from 'react-router-dom'
+import { FaRegUserCircle } from 'react-icons/fa'
 
 function Navbar() {
   return (
@@ -8,14 +10,12 @@ function Navbar() {
       </div>
 
       <nav className="nav">
-        <a href="#">Home</a>
-        <a href="#">Search</a>
-        <button className="menu-btn" aria-label="menu">
-          ☰
-        </button>
+        <Link to="/">Home</Link>
+        <Link to="/">Search</Link>
+        <Link to="/profile" className="menu-btn" aria-label="Go to profile">
+          <FaRegUserCircle />
+        </Link>
       </nav>
     </header>
   )
 }
-
-export default Navbar

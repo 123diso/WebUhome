@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer className="footer">
         <div className="footer-brand">
-          <div className="footer-logo">UHome</div>
+          <img src="/uhome-logo.png" alt="UHome logo" className="brand-logo" />
           <p>Find your place, fit your lifestyle.</p>
         </div>
 

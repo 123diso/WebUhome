@@ -24,19 +24,24 @@
 
 .nav a {
   color: #232323;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   text-decoration: none;
 }
 
 .menu-btn {
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: #a92f62;
-  color: white;
-  font-size: 1rem;
+  background: #b1376d;
+  color: white !important;
+  font-size: 1.25rem !important;
   display: grid;
   place-items: center;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.92;
 }

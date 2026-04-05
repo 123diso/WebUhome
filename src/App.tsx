@@ -1,9 +1,14 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Profile from './pages/Profile'
 import PropertyDetail from './pages/PropertyDetail'
-// import Profile from './pages/Profile'
 
 function App() {
-  return <PropertyDetail />
-  // return <Profile />
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PropertyDetail />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
-
-export default App
