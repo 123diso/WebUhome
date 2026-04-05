@@ -35,6 +35,7 @@ const HousingCard = ({ house, isFavorite, onToggleFavorite }: Props) => {
 
   return (
     <div className="card">
+      {/* IMAGE */}
       <div className="card-image">
         <img src={house.images[currentImage]} alt={house.title} />
 
@@ -56,20 +57,29 @@ const HousingCard = ({ house, isFavorite, onToggleFavorite }: Props) => {
         </button>
       </div>
 
+      {/* CONTENT */}
       <div className="card-content">
+        {/* HEADER */}
         <div className="card-header">
           <h3>{house.title}</h3>
 
-          <div className="rating">
-            <span className="rating-number">{house.rating}</span>
-            <span className="stars">{renderStars(house.rating)}</span>
+          <div className="right-section">
+            <div className="rating">
+              <span className="rating-number">{house.rating}</span>
+              <span className="stars">{renderStars(house.rating)}</span>
+            </div>
+
+            {/* 🔥 BURBUJAS AHORA DEPENDEN DE ESTE CONTENEDOR */}
+            <div className="bubbles">
+              <div className="bubble blue">🛏 {house.beds}</div>
+              <div className="bubble orange">🛁 {house.baths}</div>
+              <div className="bubble green">🚇 {house.transport}</div>
+            </div>
           </div>
         </div>
 
         <p className="distance">{house.distance} min from campus</p>
-
         <p className="type">{house.type}</p>
-
         <p className="description">{house.description}</p>
 
         <a className="more-info">More info...</a>
