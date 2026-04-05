@@ -1,21 +1,5 @@
 :root {
   font-family: Arial, sans-serif;
-  color: #1f1f1f;
-  background: #ece8e6;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #ece8e6;
-}
-
-button {
-  font-family: inherit;
 }
 
 .page {
@@ -57,3 +41,147 @@ button {
   border: none;
   cursor: pointer;
 }
+
+.property-card {
+  background: #fff8f6;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.property-main {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.property-image-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.property-image {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.property-features-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.feature-label {
+  color: #b03a73;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.mini-icons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mini-tag {
+  background: #e7ebff;
+  color: #5269c8;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  border-radius: 999px;
+}
+
+.mini-tag.orange {
+  background: #ffa96f;
+  color: white;
+}
+
+.mini-tag.green {
+  background: #b9efc1;
+  color: #1d7b37;
+}
+
+.mini-tag.pink {
+  background: #ffc8da;
+  color: #bf3f78;
+}
+
+.property-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.property-title {
+  font-size: 1.95rem;
+  color: #111;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.property-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #4b8f3f;
+  font-size: 0.86rem;
+  margin-top: 6px;
+}
+
+.property-rating {
+  color: #6786de;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.match-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: #0f8f2d;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 999px;
+  min-width: 86px;
+}
+
+.match-circle {
+  width: 34px;
+  height: 34px;
+  background: white;
+  color: #0f8f2d;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.match-badge span {
+  font-size: 0.7rem;
+}
+
+.price-line {
+  color: #c84f7b;
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin-top: 2px;
+}
+

@@ -133,16 +133,8 @@ function PropertyDetail() {
               </div>
 
              <div className="map-box">
-                <iframe
-                className="map-frame"
-                title="Property location"
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=TU_API_KEY&q=Harvard+University,Cambridge+MA"
-                />
+                <img src="/foto-mapa.png" alt="Map preview" className="map-image" />
                 </div>
-        
             </div>
           </section>
 
