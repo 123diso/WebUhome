@@ -186,3 +186,88 @@
   font-size: 0.78rem;
   margin-bottom: 16px;
 }
+
+.bars-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 22px;
+}
+
+.bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: #5b0b0b;
+  font-weight: 600;
+}
+
+.bar-track {
+  width: 100%;
+  height: 9px;
+  background: #e5c3cc;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #a10d0d;
+  border-radius: 999px;
+}
+
+.logout-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.logout-btn {
+  background: #ff372f;
+  color: white;
+  padding: 8px 36px;
+  border-radius: 999px;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .profile-top {
+    grid-template-columns: 1fr;
+  }
+
+  .bars-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 16px;
+  }
+
+  .greeting {
+    font-size: 1.6rem;
+  }
+
+  .name-pill {
+    font-size: 1.4rem;
+  }
+
+  .matters-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .logout-btn {
+    font-size: 1.25rem;
+  }
+}
