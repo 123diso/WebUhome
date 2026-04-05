@@ -6,3 +6,39 @@
   gap: 22px;
   padding: 26px 22px;
 }
+
+.footer-logo {
+  font-family: 'Baloo 2', cursive;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #ff2b2b;
+  line-height: 1;
+  text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+  margin-bottom: 8px;
+}
+
+.footer-brand p {
+  color: #e6e6e6;
+  font-size: 0.95rem;
+  max-width: 200px;
+}
+
+.footer-col h4 {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.footer-col h4::after {
+  content: '';
+  display: block;
+  width: 74px;
+  height: 1px;
+  background: #8c8c8c;
+  margin-top: 8px;
+}
+
