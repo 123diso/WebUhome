@@ -19,3 +19,4 @@ const property = {
     { label: 'Essential Spots Nearby', value: 77 },
   ],
 }
+export default property
