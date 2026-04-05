@@ -110,3 +110,79 @@
   font-size: 0.78rem;
   line-height: 1;
 }
+
+.tag.green {
+  background: #c7f0be;
+  color: #267425;
+}
+
+.tag.pink {
+  background: #ffd1df;
+  color: #c34675;
+}
+
+.tag.blue {
+  background: #d4ddff;
+  color: #5671d4;
+}
+
+.tag.peach {
+  background: #ffd8ca;
+  color: #f07f56;
+}
+
+.mini-icons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mini-tag {
+  background: #e7ebff;
+  color: #5269c8;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.mini-tag.orange {
+  background: #ffa96f;
+  color: white;
+}
+
+.mini-tag.green {
+  background: #b9efc1;
+  color: #1d7b37;
+}
+
+.mini-tag.pink {
+  background: #ffc8da;
+  color: #bf3f78;
+}
+
+.tiny-text {
+  font-size: 0.64rem;
+  color: #d57459;
+}
+
+.matters-section {
+  margin-top: 18px;
+}
+
+.matters-section h2 {
+  color: #d92d2d;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.matters-section p {
+  color: #ff5c5c;
+  font-size: 0.78rem;
+  margin-bottom: 16px;
+}
