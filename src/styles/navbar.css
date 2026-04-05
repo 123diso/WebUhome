@@ -9,3 +9,34 @@
   display: flex;
   align-items: center;
 }
+
+.brand-logo {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  color: #232323;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.menu-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #a92f62;
+  color: white;
+  font-size: 1rem;
+  display: grid;
+  place-items: center;
+  border: none;
+  cursor: pointer;
+}
