@@ -3,7 +3,9 @@ import '../styles/navbar.css'
 function Navbar() {
   return (
     <header className="topbar">
-      <div className="brand">UHome</div>
+      <div className="brand">
+  <img src="/uhome-logo.png" alt="UHome logo" className="brand-logo" />
+</div>
 
       <nav className="nav">
         <a href="#">Home</a>
