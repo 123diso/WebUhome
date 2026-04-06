@@ -1,10 +1,10 @@
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import '../styles/property-detail.css'
-import { FaBed, FaBath, FaUsers } from 'react-icons/fa'
-import { PiPawPrintFill } from 'react-icons/pi'
-import { IoLocationSharp } from 'react-icons/io5'
-import property from '../data/properties'
+import Navbar from "../components-1/Navbar";
+import Footer from "../components-1/Footer";
+import "../styles-1/property-detail.css";
+import { FaBed, FaBath, FaUsers } from "react-icons/fa";
+import { PiPawPrintFill } from "react-icons/pi";
+import { IoLocationSharp } from "react-icons/io5";
+import property from "../data/properties";
 
 function PropertyDetail() {
   return (
@@ -57,7 +57,9 @@ function PropertyDetail() {
                       <span>{property.location}</span>
                     </div>
 
-                    <p className="property-rating">{property.rating} ★ ★ ★ ★ ☆</p>
+                    <p className="property-rating">
+                      {property.rating} ★ ★ ★ ★ ☆
+                    </p>
                   </div>
 
                   <div className="match-badge">
@@ -132,9 +134,13 @@ function PropertyDetail() {
                 ))}
               </div>
 
-             <div className="map-box">
-                <img src="/foto-mapa.png" alt="Map preview" className="map-image" />
-                </div>
+              <div className="map-box">
+                <img
+                  src="/foto-mapa.png"
+                  alt="Map preview"
+                  className="map-image"
+                />
+              </div>
             </div>
           </section>
 
@@ -211,7 +217,7 @@ function PropertyDetail() {
         <Footer />
       </div>
     </div>
-  )
+  );
 }
 
-export default PropertyDetail
+export default PropertyDetail;

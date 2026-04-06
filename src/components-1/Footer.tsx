@@ -1,4 +1,4 @@
-import '../styles/footer.css'
+import "../styles-1/footer.css";
 
 function Footer() {
   return (
@@ -51,7 +51,7 @@ function Footer() {
         <p>© 2026 UHome. All rights reserved.</p>
       </div>
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

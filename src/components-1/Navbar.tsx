@@ -1,6 +1,6 @@
-import '../styles/navbar.css'
-import { FaRegUserCircle } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import "../styles-1/navbar.css";
+import { FaRegUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -17,7 +17,7 @@ function Navbar() {
         </Link>
       </nav>
     </header>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

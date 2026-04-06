@@ -1,9 +1,9 @@
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import '../styles/profile.css'
-import { HiMiniComputerDesktop } from 'react-icons/hi2'
-import { PiArmchairFill, PiDogFill } from 'react-icons/pi'
-import profile from '../data/profile'
+import Navbar from "../components-1/Navbar";
+import Footer from "../components-1/Footer";
+import "../styles-1/profile.css";
+import { HiMiniComputerDesktop } from "react-icons/hi2";
+import { PiArmchairFill, PiDogFill } from "react-icons/pi";
+import profile from "../data/profile";
 
 function Profile() {
   return (
@@ -100,7 +100,7 @@ function Profile() {
         <Footer />
       </div>
     </div>
-  )
+  );
 }
 
-export default Profile
+export default Profile;
