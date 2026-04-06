@@ -308,3 +308,97 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
+
+.review-pill {
+  position: relative;
+  border-radius: 999px;
+  padding: 10px 16px 10px 54px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.review-pill img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid white;
+}
+
+.review-pill p {
+  color: white;
+  font-size: 0.68rem;
+  line-height: 1.25;
+  max-width: 140px;
+}
+
+.review-pill span {
+  position: absolute;
+  right: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.peach-pill {
+  background: #f29a7d;
+}
+
+.lilac-pill {
+  background: #a8b0f4;
+}
+
+.pink-pill {
+  background: #d79be9;
+}
+
+.yellow-pill {
+  background: #e8a90f;
+}
+
+.blue-pill {
+  background: #4c79d5;
+}
+
+.red-pill {
+  background: #a81818;
+}
+
+.green-pill {
+  background: #3d7d69;
+}
+
+@media (max-width: 900px) {
+  .property-main,
+  .analyzer-grid,
+  .details-columns,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-box {
+    min-height: 220px;
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 16px;
+  }
+
+  .property-title,
+  .analyzer-section h2,
+  .reviews-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .property-actions {
+    grid-template-columns: 1fr;
+  }
+}
