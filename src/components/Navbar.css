@@ -27,3 +27,8 @@
   object-fit: cover;
   cursor: pointer;
 }
+
+.favorites {
+  font-size: 24px;
+  cursor: pointer;
+}

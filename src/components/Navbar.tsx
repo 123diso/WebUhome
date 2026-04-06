@@ -15,11 +15,15 @@ const Navbar = () => {
           Home
         </span>
 
+        <span className="favorites" onClick={() => navigate('/start/favorites')}>
+          Favorites
+        </span>
+
         <img
           src={profile}
           alt="profile"
           className="profile"
-          onClick={() => navigate('/login')}
+          onClick={() => navigate('/start/login')}
         />
       </div>
     </div>

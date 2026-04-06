@@ -4,22 +4,18 @@ import { useState } from 'react';
 import './HousingList.css';
 import FiltersBar from './FiltersBar';
 
-const Housinglist = () => {
+interface Props {
+  favorites: number[];
+  toggleFavorite: (id: number) => void;
+}
+
+const Housinglist = ({ favorites, toggleFavorite }: Props) => {
   const [search, setsearch] = useState('');
   const [maxPrice, setMaxPrice] = useState(1000);
   const [maxDistance, setMaxDistance] = useState(50);
   const [propertyType, setPropertyType] = useState('');
   const [lifeStyle, setLifeStyle] = useState('');
   const [extraFilters, setExtraFilters] = useState<string[]>([]);
-  const [favorites, setFavorites] = useState<number[]>([]);
-
-  const toggleFavorite = (id: number) => {
-    if (favorites.includes(id)) {
-      setFavorites(favorites.filter((fav) => fav !== id));
-    } else {
-      setFavorites([...favorites, id]);
-    }
-  };
 
   const filteredHouses = houses.filter(
     (house) =>
