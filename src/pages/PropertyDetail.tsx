@@ -1,12 +1,15 @@
 import Navbar from "../components-1/Navbar";
-import Footer from "../components-1/Footer";
+import Footer from "../component/Footer";
 import "../styles-1/property-detail.css";
 import { FaBed, FaBath, FaUsers } from "react-icons/fa";
 import { PiPawPrintFill } from "react-icons/pi";
 import { IoLocationSharp } from "react-icons/io5";
 import property from "../data/properties";
+import { useNavigate } from "react-router-dom";
 
 function PropertyDetail() {
+  const navigate = useNavigate();
+
   return (
     <div className="page">
       <div className="app-shell">
@@ -109,107 +112,13 @@ function PropertyDetail() {
 
             <div className="property-actions">
               <button className="action-btn">Contact</button>
-              <button className="action-btn">Compare</button>
-            </div>
-          </section>
 
-          <section className="analyzer-section">
-            <h2>Student Vibe Analyzer</h2>
-
-            <div className="analyzer-grid">
-              <div className="bars-box">
-                {property.vibe.map((item, index) => (
-                  <div key={index} className="bar-item">
-                    <div className="bar-label">
-                      <span>{item.label}</span>
-                      <span>{item.value}%</span>
-                    </div>
-                    <div className="bar-track">
-                      <div
-                        className="bar-fill"
-                        style={{ width: `${item.value}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="map-box">
-                <img
-                  src="/foto-mapa.png"
-                  alt="Map preview"
-                  className="map-image"
-                />
-              </div>
-            </div>
-          </section>
-
-          <section className="reviews-section">
-            <h2>Reviews</h2>
-
-            <div className="reviews-grid">
-              <div className="review-pill peach-pill">
-                <img
-                  src="https://randomuser.me/api/portraits/women/44.jpg"
-                  alt="reviewer"
-                />
-                <p>“Simple house but super peaceful vibe.”</p>
-                <span>4.1</span>
-              </div>
-
-              <div className="review-pill lilac-pill">
-                <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="reviewer"
-                />
-                <p>“Quite organized and easy to live in.”</p>
-                <span>4.0</span>
-              </div>
-
-              <div className="review-pill pink-pill">
-                <img
-                  src="https://randomuser.me/api/portraits/women/29.jpg"
-                  alt="reviewer"
-                />
-                <p>“Top room and friendly environment.”</p>
-                <span>3.9</span>
-              </div>
-
-              <div className="review-pill yellow-pill">
-                <img
-                  src="https://randomuser.me/api/portraits/women/52.jpg"
-                  alt="reviewer"
-                />
-                <p>“Simple house rules and peaceful vibe.”</p>
-                <span>4.1</span>
-              </div>
-
-              <div className="review-pill blue-pill">
-                <img
-                  src="https://randomuser.me/api/portraits/men/16.jpg"
-                  alt="reviewer"
-                />
-                <p>“Simple house rules and peaceful vibe.”</p>
-                <span>4.1</span>
-              </div>
-
-              <div className="review-pill red-pill">
-                <img
-                  src="https://randomuser.me/api/portraits/women/12.jpg"
-                  alt="reviewer"
-                />
-                <p>“State organized and easy to live in.”</p>
-                <span>4.0</span>
-              </div>
-
-              <div className="review-pill green-pill">
-                <img
-                  src="https://randomuser.me/api/portraits/men/71.jpg"
-                  alt="reviewer"
-                />
-                <p>“Cozy room and friendly environment.”</p>
-                <span>3.9</span>
-              </div>
+              <button
+                className="action-btn"
+                onClick={() => navigate("/start/favorites")}
+              >
+                Compare
+              </button>
             </div>
           </section>
         </main>

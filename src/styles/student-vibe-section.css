@@ -1,0 +1,102 @@
+.student-vibe-section {
+  background: #f5f1ed;
+  padding: 72px 24px;
+}
+
+.student-vibe-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.student-vibe-left h3 {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #111827;
+  margin-bottom: 28px;
+}
+
+.student-vibe-left p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #1f2937;
+  margin-bottom: 18px;
+  max-width: 640px;
+}
+
+.student-vibe-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-end;
+}
+
+.vibe-pill {
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #fff;
+  border: 2px solid;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  width: fit-content;
+  max-width: 100%;
+  text-align: center;
+}
+
+.vibe-pill-blue {
+  color: #4f6ef7;
+  border-color: #4f6ef7;
+  margin-right: 110px;
+}
+
+.vibe-pill-pink {
+  color: #ec4899;
+  border-color: #ec4899;
+  margin-right: 0;
+}
+
+.vibe-pill-green {
+  color: #2f8f46;
+  border-color: #2f8f46;
+  margin-right: 130px;
+}
+
+.vibe-pill-red {
+  color: #ff3b30;
+  border-color: #ff3b30;
+  margin-right: 25px;
+}
+
+.vibe-pill-purple {
+  color: #b83280;
+  border-color: #b83280;
+  margin-right: 100px;
+}
+
+@media (max-width: 900px) {
+  .student-vibe-container {
+    grid-template-columns: 1fr;
+  }
+
+  .student-vibe-left h3 {
+    font-size: 2.2rem;
+  }
+
+  .student-vibe-right {
+    align-items: center;
+  }
+
+  .vibe-pill-blue,
+  .vibe-pill-pink,
+  .vibe-pill-green,
+  .vibe-pill-red,
+  .vibe-pill-purple {
+    margin-right: 0;
+    width: 100%;
+  }
+}

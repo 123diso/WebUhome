@@ -1,11 +1,14 @@
 import Navbar from "../components-1/Navbar";
-import Footer from "../components-1/Footer";
+import Footer from "../component/Footer";
 import "../styles-1/profile.css";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
 import { PiArmchairFill, PiDogFill } from "react-icons/pi";
 import profile from "../data/profile";
+import { useNavigate } from "react-router-dom";
 
 function Profile() {
+  const navigate = useNavigate();
+
   return (
     <div className="page">
       <div className="app-shell">
@@ -92,7 +95,9 @@ function Profile() {
             </div>
 
             <div className="logout-wrap">
-              <button className="logout-btn">log out</button>
+              <button className="logout-btn" onClick={() => navigate("/login")}>
+                log out
+              </button>
             </div>
           </section>
         </main>

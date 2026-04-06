@@ -1,0 +1,100 @@
+.filters-bar {
+  padding: 20px;
+  position: relative;
+}
+
+.search {
+  width: 100%;
+  padding: 14px;
+  border-radius: 25px;
+  border: none;
+  background: #e4e0de;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.chip {
+  position: relative;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  user-select: none;
+}
+
+.purple {
+  background: #8199f8;
+}
+.orange {
+  background: #f97316;
+}
+.green {
+  background: #5effd4;
+}
+.pink {
+  background: #e7b0ef;
+}
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  min-width: 180px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown div {
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropdown div:hover {
+  background: #f3f3f3;
+  color: #a1325c;
+}
+
+.dropdown input[type='range'] {
+  width: 100%;
+}
+.extra-filters {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.extra-chip {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.extra-chip:hover {
+  background: #ddd;
+}
+
+.extra-chip.active {
+  background: #000;
+  color: white;
+}
