@@ -12,10 +12,12 @@ function Navbar() {
       <nav className="nav">
         <Link to="/">Home</Link>
         <Link to="/">Search</Link>
-        <Link to="/profile.tsx" className="menu-btn" aria-label="Go to profile">
+        <Link to="/profile" className="menu-btn" aria-label="Go to profile">
           <FaRegUserCircle />
         </Link>
       </nav>
     </header>
   )
 }
+
+export default Navbar
