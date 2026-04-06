@@ -10,7 +10,7 @@ export default function HeroSection() {
   };
 
   const handleStartSearching = () => {
-    navigate('/start'); // 👈 ahora va a tu página Start
+    navigate('/start/housing');
   };
 
   return (
@@ -33,11 +33,16 @@ export default function HeroSection() {
           </p>
 
           <div className="hero-buttons">
-            <button className="hero-btn hero-btn-primary" onClick={handleStartSearching}>
+            <button
+              type="button"
+              className="hero-btn hero-btn-primary"
+              onClick={handleStartSearching}
+            >
               Start Searching
             </button>
 
             <button
+              type="button"
               className="hero-btn hero-btn-secondary"
               onClick={handleScrollToHowItWorks}
             >

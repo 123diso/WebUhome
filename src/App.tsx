@@ -10,9 +10,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/start" element={<Start />} />
+
+        <Route path="/start/*" element={<Start />} />
+
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
